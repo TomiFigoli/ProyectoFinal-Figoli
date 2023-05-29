@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Clientes(models.Model):
     nombre=models.CharField(max_length=50)
-    cuit=models.IntegerField(max_length=11, unique=True)
+    cuit=models.IntegerField(unique=True)
     def __str__(self) -> str:
         return f"{self.nombre} {self.cuit}"
 
