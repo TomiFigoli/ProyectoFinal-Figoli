@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1>Inicio</h1>
+<body style="color: firebrick;">
+    <a href="{% url 'clientes:index' %}">Ir a Clientes</a>
+    <a href="{% url 'home:index' %}">Inicio</a>
     
+    
+    {% block CONTENT %}
+    <h1 style="color: white;">Inicio</h1>
+
+
+    {% endblock %}
 </body>
 </html>
