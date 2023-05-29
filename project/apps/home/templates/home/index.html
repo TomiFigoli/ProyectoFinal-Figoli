@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body style="color: firebrick;">
-    <a href="{% url 'clientes:index' %}">Ir a Clientes</a>
-    <a href="{% url 'home:index' %}">Inicio</a>
-    
-    
-    {% block CONTENT %}
-    <h1 style="color: white;">Inicio</h1>
-
-
-    {% endblock %}
-</body>
-</html>
+{% extends 'home/base.html' %}
+{% block CONTENT %}
+{% include 'home/navbar.html' %}
+<h1>Inicio</h1>
+<a href="{% url 'home:agregar-cliente' %}">Agregar cliente</a>
+<br>
+<a href="{% url 'home:agregar-producto' %}">Agregar producto</a>
+<br>
+<a href="{% url 'home:agregar-vendedor' %}">Agregar vendedor</a>
+{% include 'home/footer.html' %}
+{% endblock  %}

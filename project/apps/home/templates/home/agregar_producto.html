@@ -1,0 +1,12 @@
+{% extends 'home/base.html' %}
+
+{% block CONTENT  %}
+{% include 'home/navbar.html' %}
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="agregar cliente">
+    </form>
+
+{% include 'home/footer.html' %}
+{% endblock  %}
