@@ -3,6 +3,6 @@ from django.contrib import admin
 from . import models
 # Register your models here.
 
-admin.site.register(models.Clientes)
-admin.site.register(models.Productos)
-admin.site.register(models.Vendedores)
+admin.site.register(models.Cliente)
+admin.site.register(models.Producto)
+admin.site.register(models.Vendedor)

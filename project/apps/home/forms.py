@@ -1,17 +1,17 @@
 from django import forms
 from . import models
 
-class ClientesForm(forms.ModelForm):
+class ClienteForm(forms.ModelForm):
     class Meta:
-        model = models.Clientes
+        model = models.Cliente
         fields = "__all__"
 
-class ProductosForm(forms.ModelForm):
+class ProductoForm(forms.ModelForm):
     class Meta:
-        model = models.Productos
+        model = models.Producto
         fields = "__all__"
 
-class VendedoresForm(forms.ModelForm):
+class VendedorForm(forms.ModelForm):
     class Meta:
-        model = models.Productos
+        model = models.Vendedor
         fields = "__all__"
